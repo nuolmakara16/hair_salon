@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--Styles-->
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+<!-- Swiper -->
+<section class="hero-carousel">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="swiper-img sp-item" src="assets/img/hero01_mobile.jpg">
+                <img class="swiper-img pc-item" src="assets/img/hero01.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swiper-img sp-item" src="assets/img/hero02_mobile.jpg">
+                <img class="swiper-img pc-item" src="assets/img/hero02.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swiper-img sp-item" src="assets/img/hero03_mobile.jpg">
+                <img class="swiper-img pc-item" src="assets/img/hero03.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swiper-img sp-item" src="assets/img/hero04_mobile.jpg">
+                <img class="swiper-img pc-item" src="assets/img/hero04.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img class="swiper-img sp-item" src="assets/img/hero05_mobile.jpg">
+                <img class="swiper-img pc-item" src="assets/img/hero05.jpg">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div><!-- /.swiper-container -->
+</section>
+<section class="brief-service">
+    <h2 class="brief-service__ttl">
+        ECCアーティスト美容<br>
+        ヘアメイクアーティストコース<br>
+        はココがスゴイ！
+    </h2>
+    <div class="brief-block">
+        <div class="brief-block__ttl">
+            <div class="brief-block__ttl-num">
+                01
+            </div>
+            <div class="brief-block__ttl-txt">
+                プロから学ぶ
+            </div>
+        </div>
+        <div>
+            <img src="assets/img/brief01.png">
+        </div>
+    </div>
+</section><!-- /.brief-service -->
+<section class="brief-service">
+    <h2 class="brief-service__ttl">
+        1800時間超の実習を重ね<br>
+        プロに交じって数多くの現場も経験。
+    </h2>
+    <div class="brief-block">
+        <div class="brief-block__ttl">
+            <div class="brief-block__ttl-num">
+                02
+            </div>
+            <div class="brief-block__ttl-txt">
+                プロから学ぶ
+            </div>
+        </div>
+        <div>
+            <img src="assets/img/brief02.png">
+        </div>
+    </div>
+</section><!-- /.brief-service -->
+<section class="brief-service">
+    <h2 class="brief-service__ttl">
+        1800時間超の実習を重ね<br>
+        プロに交じって数多くの現場も経験。
+    </h2>
+    <div class="brief-block">
+        <div class="brief-block__ttl">
+            <div class="brief-block__ttl-num">
+                03
+            </div>
+            <div class="brief-block__ttl-txt">
+                ３年間学ぶ
+            </div>
+        </div>
+        <div class="content-list">
+            <div class="content-list__card">
+                <img class="content-list__img sp-item" src="assets/img/poster_vdo_section1.png">
+                <img class="content-list__img pc-item" src="assets/img/list01.png">
+            </div>
+            <div class="content-list__card">
+                <img class="content-list__img sp-item" src="assets/img/poster_vdo_section2.png">
+                <img class="content-list__img pc-item" src="assets/img/list02.png">
+            </div>
+            <div class="content-list__card">
+                <img class="content-list__img sp-item" src="assets/img/poster_vdo_section3.png">
+                <img class="content-list__img pc-item" src="assets/img/list03.png">
+            </div>
+            <div class="content-list__card">
+                <img class="content-list__img sp-item" src="assets/img/poster_vdo_section4.png">
+                <img class="content-list__img pc-item" src="assets/img/list04.png">
+            </div>
+        </div>
+    </div>
+</section><!-- /.brief-service -->
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        initialSlide: 0,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 0,
+        parallax: true,
+        speed: 1000,
+        loop: true,
+        keyboard: {
+            enabled: true,
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* css */
+html,
+body {
+    position: relative;
+    height: 100%;
+    color: #000000;
+    font-family: "Noto Sans JP", "Noto Sans", "Arial", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+/*Common Styles*/
+
+img {
+    width: 100%;
+}
+@media screen and(min-width: 768px){
+    img {
+        width: 100%;
+    }
+}
+body {
+
+    background: #ffffff;
+    font-size: 14px;
+    margin: 0 0 100px 0;
+    padding: 0;
+    height: auto;
+}
+* {
+    font-family: "Noto Sans JP", "Noto Sans", "Arial", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+.sp-item {
+    display: block;
+}
+.pc-item {
+    display: none;
+}
+@media screen and (min-width: 768px){
+    .sp-item {
+        display: none;
+    }
+    .pc-item {
+        display: block;
+    }
+}
+
+/* .hero-carousel
+----------------------------------------------------------  */
+.hero-carousel {}
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-img {
+    width: 100%;
+    height: auto;
+}
+.swiper-pagination {
+    text-align: end !important;
+}
+@media only screen and (min-width: 768px) {
+
+}
+/*--------------------------------------------------------
+/.hero-carousel */
+
+/* .brief-service
+----------------------------------------------------------  */
+.brief-service {
+    margin: 100px 0;
+}
+.brief-service__ttl {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: .1em;
+    text-align: center;
+    color: #D3192E;
+}
+.brief-block {
+    font-weight: 700;
+}
+.brief-block__ttl {
+    padding: 0 8.000357143vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    color: #D3192E;
+    transform: translateY(30%);
+}
+.brief-block__ttl-num {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 85px;
+
+}
+.brief-block__ttl-txt {
+    font-size: 34px;
+    line-height: 35px;
+    letter-spacing: .1em;
+
+}
+.content-list__img {
+    margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+    .brief-service {
+        margin: 0 55.5px;
+    }
+}
+/*--------------------------------------------------------
+/.brief-service */
