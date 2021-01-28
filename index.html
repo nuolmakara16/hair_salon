@@ -9,7 +9,9 @@
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <!--AOS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <!-- Swiper -->
@@ -41,13 +43,14 @@
         <div class="swiper-pagination"></div>
     </div><!-- /.swiper-container -->
 </section>
+
 <section class="brief-service">
     <h2 class="brief-service__ttl">
         ECCアーティスト美容<br>
         ヘアメイクアーティストコース<br>
         はココがスゴイ！
     </h2>
-    <div class="brief-block">
+    <section class="brief-block">
         <div class="brief-block__ttl">
             <div class="brief-block__ttl-num">
                 01
@@ -59,14 +62,12 @@
         <div>
             <img src="assets/img/brief01.png">
         </div>
-    </div>
-</section><!-- /.brief-service -->
-<section class="brief-service">
-    <h2 class="brief-service__ttl">
-        1800時間超の実習を重ね<br>
-        プロに交じって数多くの現場も経験。
-    </h2>
-    <div class="brief-block">
+        <h3 class="brief-service__desc">
+            1800時間超の実習を重ね<br class="sp-br">
+            プロに交じって数多くの現場も経験。
+        </h3>
+    </section><!-- /.brief-block -->
+    <section class="brief-block">
         <div class="brief-block__ttl">
             <div class="brief-block__ttl-num">
                 02
@@ -78,14 +79,13 @@
         <div>
             <img src="assets/img/brief02.png">
         </div>
-    </div>
-</section><!-- /.brief-service -->
-<section class="brief-service">
-    <h2 class="brief-service__ttl">
-        1800時間超の実習を重ね<br>
-        プロに交じって数多くの現場も経験。
-    </h2>
-    <div class="brief-block">
+        <h3 class="brief-service__desc">
+            1800時間超の実習を重ね<br class="sp-br">
+            プロに交じって数多くの現場も経験。
+        </h3>
+    </section><!-- /.brief-block -->
+
+    <section class="brief-block">
         <div class="brief-block__ttl">
             <div class="brief-block__ttl-num">
                 03
@@ -111,36 +111,44 @@
                 <img class="content-list__img sp-item" src="assets/img/poster_vdo_section4.png">
                 <img class="content-list__img pc-item" src="assets/img/list04.png">
             </div>
+        </div><!-- /.content-list -->
+        <div class="modern-btn">
+            <div class="modern-btn__txt">
+                ヘアメイクアーティストコース<br>
+                ［ 3年制 ］とは？
+            </div>
+            <div class="modern-btn__icon">
+                <svg width="10" height="15" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.4225 15.0012L1.90735e-06 30.0001L7.40776 30.0001L20 15.0012L7.40776 0.000122579L4.88159e-07 0.000122878L12.4225 15.0012Z" fill="white"></path></svg>
+            </div>
         </div>
-    </div>
+    </section><!-- /.brief-block -->
 </section><!-- /.brief-service -->
+
+<section class="courses">
+    <h2 class="course-intro">
+        ECCアーティスト美容<br>
+        ヘアメイクアーティストコース<br>
+        ［3年制］3年間の学び
+    </h2>
+    <section class="course-1">
+        <div class="course-header">
+            1
+        </div>
+        <div class="course-container">
+            <img src="/assets/img/poster_vdo_section1.png">
+        </div>
+    </section>
+</section>
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<!-- Initialize Swiper -->
+<script src="/assets/js/common.js"></script>
+
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        initialSlide: 0,
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 0,
-        parallax: true,
-        speed: 1000,
-        loop: true,
-        keyboard: {
-            enabled: true,
-        },
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+    AOS.init();
 </script>
 </body>
 </html>
