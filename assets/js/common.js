@@ -1,6 +1,6 @@
 <!-- Initialize Swiper -->
 
-var swiper = new Swiper('.swiper-container', {
+var swiper1 = new Swiper('.swiper1', {
     initialSlide: 0,
     slidesPerView: 1,
     slidesPerGroup: 1,
@@ -16,7 +16,14 @@ autoplay: {
     disableOnInteraction: false,
     },
 pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination1',
     clickable: true,
     },
 });
+
+var swiper2 = new Swiper('.swiper2', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+    },
+});
+AOS.init();
