@@ -9,8 +9,8 @@ body {
 
 /*Common Styles*/
 img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 @media screen and(min-width: 768px){
     img {
@@ -579,12 +579,150 @@ span.pro-badge__txt:after {
     font-weight: 700;
     padding: 16px;
     transform: translateY(30%);
+    color: #363332;
 }
 .activity-header > .subheader {
     font-size: 14px;
+    margin: auto;
+    background: #d8d8d8;
+    transform: translateY(-24px);
+    display: table;
+    padding: 0 20px;
 }
 .activity-header > .main-header {
     font-size:29px;
 }
+.main-header--red {
+    color:#D3192E;
+}
+.activity-desc{
+    padding: 16px;
+}
+.activity-desc-header {
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 16px;
+}
+.activity-desc__body {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: .008em;
+}
 /*--------------------------------------------------------
 /.activity */
+
+/* .more-ecc
+----------------------------------------------------------  */
+.more-ecc {
+    font-weight: 700;
+    background-color: #ffffff;
+    margin: auto;
+    text-align: center;
+    padding: 100px 30px;
+}
+.more-ecc-header {
+    font-family: Oswald,sans-seri;
+    margin-bottom: 25px;
+}
+.more-ecc-header h1 {
+    font-size: 46px;
+    color: #2a3940;
+}
+.more-ecc-header h2 {
+    font-size: 20px;
+    text-align: start;
+}
+.more-ecc__txt {
+    margin-bottom: 30px;
+}
+.more-ecc-btns {}
+.more-ecc-btn {}
+.more-ecc-btn__ttl {
+    font-size: 14px;
+    line-height: 22px;
+}
+.more-ecc-btn__link {
+    background: #D3192E;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/*--------------------------------------------------------
+/.more-ecc */
+
+/* .follow-me
+----------------------------------------------------------  */
+.follow-me {
+    background-image: url("https://art.ecc.ac.jp/real/vol30/assets/img/follow_me_bg.c5c4712.jpg");
+    padding: 16px;
+}
+.follow-me-header {
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+}
+.follow-me-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.follow-me-header h2 {
+    margin-bottom: 10px;
+}
+.follow-me-content {}
+.follow-me-content__imgs {
+    justify-content: space-between;
+}
+.follow-me-content__img {
+    width: 153px;
+    height: 153px;
+    margin-bottom: 15px;
+}
+/*--------------------------------------------------------
+/.follow-me */
+
+/* .share-me
+----------------------------------------------------------  */
+.share-me {
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    padding: 60px 0;
+}
+.share-me-ttl {
+    font-size: 28px;
+    margin-bottom: 30px ;
+}
+.share-me-icons {
+    max-width: 200px;
+    margin: auto;
+}
+.share-me-icon {
+    width: 35px;
+    height: 35px;
+}
+/*--------------------------------------------------------
+/.share-me */
+
+/* .footer
+----------------------------------------------------------  */
+.footer {
+    background-color: #263238;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
+.footer-txt {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 17.5px;
+}
+/*--------------------------------------------------------
+/.footer */
