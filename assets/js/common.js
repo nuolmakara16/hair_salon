@@ -26,4 +26,14 @@ var swiper2 = new Swiper('.swiper2', {
         nextEl: '.swiper-button-next',
     },
 });
+var swiper3 = new Swiper('.swiper3', {
+    navigation: {
+        nextEl: '.swiper-button-next-3',
+    },
+});
+var swiper4 = new Swiper('.swiper4', {
+    navigation: {
+        nextEl: '.swiper-button-next-4',
+    },
+});
 AOS.init();

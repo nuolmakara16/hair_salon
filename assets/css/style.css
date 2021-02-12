@@ -455,6 +455,7 @@ a {
     align-items: center;
 }
 .pro-2-pro {
+    font-family: 'Oswald', sans-serif;
     font-size: 60px;
     line-height: 56px;
     font-weight: 700;
@@ -594,9 +595,9 @@ a {
 
 }
 .student-voice__ttl {
-    font-family: Oswald,sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
-    font-size: 75px;
+    font-size: 55px;
     font-weight: 700;
     transform: skewY(-15deg);
     padding-bottom: 20px;
@@ -872,7 +873,7 @@ a {
 /*--------------------------------------------------------
 /.std-v-right */
 .std-v-left {
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     max-width: 515px;
 }
 .std-v-img-left__wrapper {
@@ -1066,19 +1067,46 @@ span.pro-badge__txt {
     }
     .pro-more-container {
         max-width:  768px;
-        margin:50px auto;
+        margin:0 auto;
     }
     .row-reverse .pro-details {
         text-align: right;
     }
     .pro {
         padding: 20px 0;
+        position: relative;
+        margin-top: 60px;
     }
     .pro-footer {
         max-width: 300px;
         margin: auto;
         height: 44px;
         font-weight: 700;
+    }
+    .pro-badge--right {
+        right: 60px;
+        top: -15px;
+        position: absolute;
+        color: #ffffff;
+        text-align: start;
+        font-size: 10px;
+        font-weight: 700;
+        height: 25.62px;
+        background-color: #D3192E;
+        width: 200px;
+        padding: 5px 5px 5px 15px;
+        text-align: end;
+    }
+    .pro-badge--right::after {
+        content: "";
+        position: absolute;
+        left: -1px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 18px solid #263238;
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
     }
 }
 /*--------------------------------------------------------
@@ -1275,9 +1303,22 @@ span.pro-badge__txt {
     max-width: 375px;
 }
 .artist-detail {
+    cursor: pointer;
     position: absolute;
-    top: 39px;
-    right: -30px;
+    top: 35px;
+    right: -35px;
+    font-family: Oswald,sans-serif;
+    font-size: 13px;
+    color: #2a3940;
+    transition: transform .3s;
+}
+.artist-detail:hover {
+    transform: translate(3px,3px);
+    text-decoration: none;
+    transition: transform .3s;
+    position: absolute;
+    top: 35px;
+    right: -35px;
 }
 @media screen and (min-width: 768px) {
     .artists {
@@ -1388,11 +1429,17 @@ span.pro-badge__txt {
     color: #ffffff;
     width: 100%;
     height: 50px;
+    border: 1px solid #D3192E;
     display: inline-block;
     text-align: center;
     line-height: 50px;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+.more-ecc-btn__link:hover {
+    background-color: #ffffff;
+    color: #D3192E;
+    border: 1px solid #D3192E;
 }
 @media screen and (min-width: 768px) {
     .more-ecc {
