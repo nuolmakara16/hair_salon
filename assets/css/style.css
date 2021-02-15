@@ -1142,6 +1142,7 @@ span.pro-badge__txt {
     color: #D3192E;
     font-weight: 700;
     max-width: 375px;
+    margin: auto;
 }
 .event-header h1 {
     font-size: 30px;
