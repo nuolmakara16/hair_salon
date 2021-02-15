@@ -165,15 +165,6 @@ a {
 .btn:hover path {
     fill: #263238;
 }
-.next-1 .swiper-button-next:after {
-    color: #d0bf27;
-}
-.next-2 .swiper-button-next:after {
-    color: #5494ff;
-}
-.next-3 .swiper-button-next:after {
-    color: #37bba6;
-}
 .swiper-button-next:after{
     content: 'next';
     width: 6px;
@@ -182,6 +173,12 @@ a {
     position: absolute;
     left: 12px;
     top: 102px;
+}
+@media screen and (min-width: 768px) {
+    .swiper-button-next:after{
+        top: 45px;
+        left:-30px;
+    }
 }
 /* .hero-carousel
 ----------------------------------------------------------  */
@@ -1422,6 +1419,31 @@ span.pro-badge__txt {
 .more-ecc-btn__ttl {
     font-size: 14px;
     line-height: 22px;
+    position: relative;
+}
+.more-ecc-btn__ttl::before {
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    width: 2px;
+    height: calc(100% - 5px);
+    background-color: #3e3a39;
+    border-radius: 1px;
+    left: 0;
+    transform: rotate(-24deg);
+}
+.more-ecc-btn__ttl::after {
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    width: 2px;
+    height: calc(100% - 5px);
+    background-color: #3e3a39;
+    border-radius: 1px;
+    right: 0;
+    transform: rotate(
+            24deg
+    );
 }
 
 .more-ecc-btn__link {
@@ -1435,11 +1457,30 @@ span.pro-badge__txt {
     line-height: 50px;
     border-radius: 10px;
     margin-bottom: 20px;
+    position: relative;
 }
 .more-ecc-btn__link:hover {
     background-color: #ffffff;
     color: #D3192E;
     border: 1px solid #D3192E;
+}
+.more-ecc-btn__link:hover .arrow-right-svg path {
+    fill: #D3192E;
+}
+.arrow-right-svg {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+.more-ecc-btn__link:hover .new-tab-svg path {
+    fill: #D3192E;
+}
+.new-tab-svg {
+    position: absolute;
+    right: 16px;
+    top: 17px;
 }
 @media screen and (min-width: 768px) {
     .more-ecc {
@@ -1462,6 +1503,19 @@ span.pro-badge__txt {
         height: 110px;
         justify-content: center;
         align-items: center;
+        position: relative;
+    }
+    .arrow-right-svg {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 20px;
+        top: 50px;
+    }
+    .new-tab-svg {
+        position: absolute;
+        right: 16px;
+        top: 46px;
     }
 }
 /*--------------------------------------------------------
@@ -1472,6 +1526,7 @@ span.pro-badge__txt {
 .follow-me {
     background-image: url("https://art.ecc.ac.jp/real/vol30/assets/img/follow_me_bg.c5c4712.jpg");
     padding: 16px;
+    font-family: 'Oswald', sans-serif;
 }
 .follow-me-header {
     text-align: center;
@@ -1523,6 +1578,7 @@ span.pro-badge__txt {
     text-align: center;
     margin: auto;
     padding: 60px 0;
+    font-family: 'Oswald', sans-serif;
 }
 .share-me-ttl {
     font-size: 28px;
@@ -1562,12 +1618,15 @@ span.pro-badge__txt {
     z-index: 99;
     font-size: 18px;
     border: none;
+
     outline: none;
-    background-color: red;
+    background-color: #263238;
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 #myBtn:hover {
