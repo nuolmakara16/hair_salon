@@ -184,11 +184,27 @@ a {
         left:-30px;
     }
 }
+.top-logo {
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    width: 300px;
+}
 /* .hero-carousel
 ----------------------------------------------------------  */
 .hero-carousel {
-
+    position: relative;
 }
+/*.hero-carousel:after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    bottom: -2px;*/
+/*    border-bottom: 10vh solid #fff;*/
+/*    border-left: 100vw solid transparent;*/
+/*    z-index: 1;*/
+/*}*/
 .swiper-container {
     width: 100%;
 }
@@ -278,7 +294,7 @@ a {
     position: absolute;
     width: 2px;
     background-color: #fff;
-    top: 55px;
+    top: 90px;
     bottom: 0;
     left: 50px;
     margin-left: -3px;
@@ -338,7 +354,7 @@ a {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    right: 22px;
+    right: 15px;
     bottom: 0;
     z-index: 1;
     font-weight: 700;
@@ -388,7 +404,7 @@ a {
         position: absolute;
         width: 2px;
         background-color: #fff;
-        top: 55px;
+        top: 88px;
         bottom: 0;
         left: 161px;
         margin-left: -3px;
