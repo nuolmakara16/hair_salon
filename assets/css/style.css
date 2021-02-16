@@ -240,6 +240,9 @@ a {
     .swiper-slide {
         margin-bottom: 20%;
     }
+    .hero-carousel:after {
+        content: none;
+    }
 }
 /*--------------------------------------------------------
 /.hero-carousel */
