@@ -698,6 +698,16 @@ a {
         width: 100%;
         max-width: 100%;
     }
+    .teacher-slider__desc--top p {
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: .1em;
+        font-weight: 700;
+        width: 300px;
+        margin: auto;
+        min-height: 31px;
+        text-align: center;
+    }
     .teacher-slider__desc--bot {
         width: 100%;
         max-width: 100%;
@@ -951,6 +961,7 @@ a {
     top: 50%;
     color: #ffffff;
     text-align: -webkit-right;
+    right: 0;
 }
 .std-v-img-left__txt-top p {
     background-color: #D0BF27;
