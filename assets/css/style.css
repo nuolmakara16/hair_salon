@@ -611,13 +611,13 @@ a {
 }
 .trainer-desc {
     color: #ffffff;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 17px;
     letter-spacing: .162em;
     max-width: 320px;
     margin: auto;
     text-align: start;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .student-voice {
@@ -681,7 +681,9 @@ a {
         max-width: 100%;
     }
     .trainer-desc {
-        max-width: 458px;
+        font-size: 12px;
+        font-weight: 300;
+        max-width: 565px;
     }
     .poster-body__img video {
         object-fit: none;
