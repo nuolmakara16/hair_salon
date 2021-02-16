@@ -75,6 +75,10 @@ body {
 .row-reverse {
     flex-direction: initial !important;
 }
+.white-txt {
+    color: white;
+    margin-top: 30px;
+}
 @media screen and (min-width: 768px){
     .row-reverse {
         flex-direction: row-reverse !important;
@@ -580,7 +584,9 @@ a {
 }
 .trainer-txt {
     text-align: -webkit-right;
-    margin-top: 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .trainer-txt p {
     font-size: 17px;
@@ -1066,11 +1072,30 @@ span.pro-badge__txt {
     padding: 10px 0;
 }
 .pro-footer {
+    position: relative;
     color: #000000;
     background-color: #ffffff;
     height: 50px;
     margin-bottom: 30px;
     font-weight: 700    ;
+}
+.pro-footer-svg {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+}
+.pro-footer-svg path {
+    fill: black;
+}
+@media screen and (min-width: 768px) {
+    .pro-footer-svg {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    .pro-footer-svg path {
+        fill: black;
+    }
 }
 @media screen and (min-width: 768px) {
     .pro-badge--left {
@@ -1193,6 +1218,9 @@ span.pro-badge__txt {
     position: relative;
     margin-bottom: 86px;
 }
+.event-right:first-of-type {
+    margin-top: 10px!important;
+}
 .event-right__img {
     position: relative;
 }
@@ -1239,7 +1267,7 @@ span.pro-badge__txt {
         margin-right: auto;
     }
     .event-header {
-        margin: auto;
+        margin: auto auto -80px;
     }
     .event-right {
         max-width: 768px;
